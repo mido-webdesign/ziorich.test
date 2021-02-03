@@ -1,0 +1,303 @@
+<!-- 共通ヘッダーはここから -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title><!-- ページのタイトル -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+  
+  <!-- アイコン画像 -->
+  <script src="https://kit.fontawesome.com/d618a1f02f.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <!-- ヘッダー上新着情報エリア -->
+    <div class="header-info">
+      <p class="header-info-text">
+        ヘッダー上の新着情報が入ります。ヘッダー上の新着情報が入ります。
+      </p>
+      <div class="header-info-icon">
+        <ul class="header-info-icon-list">
+          <li><a href="https://www.easy-myshop.jp/ems/ap/ziorich/c-member-mypage"><i class="fas fa-user"></i></a></li><!-- 会員ページへのリンク -->
+          <li><a href="{cart_url}"><i class="fas fa-shopping-cart"></i></a></li><!-- カートページへのリンク -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <!-- ヘッダーロゴ画像エリア -->
+      <div class="header-logo-area">
+        <h1 class="header-logo"><a href="{shop_url}"><img src="image/header-logo.png" alt="ZIORICHロゴ画像"></a></h1><!-- ロゴ画像 -->
+        <div class="header-logo-right">
+          <div class="header-search-form">{search_form}</div><!-- 検索フォーム -->
+          <a class="header-insta-banner" href="#">インスタバナー</a><!-- #にインスタのURLを入れてください -->
+        </div>
+      </div>
+
+      <!-- ヘッダーメニューPC版 -->
+      <nav class="header-nav">
+        <ul>
+          <li><a href="{shop_url}">Home<span>ホーム</span></a></li><!-- ホームへのリンク -->
+          <li><a href="{item_list_url}?category_id=カテゴリID">T-shirt<span>Tシャツ</span></a></li><!-- 各カテゴリIDを入力してください -->
+          <li><a href="{item_list_url}?category_id=カテゴリID">Polo shirt<span>ポロシャツ</span></a></li>
+          <li><a href="{item_list_url}?category_id=カテゴリID">Shirt<span>シャツ</span></a></li>
+          <li><a href="{item_list_url}?category_id=カテゴリID">Pants<span>パンツ</span></a></li>
+          <li><a href="{item_list_url}?category_id=カテゴリID">Suit<span>スーツ</span></a></li>
+          <li><a href="#">About us<span>ZIORICHについて</span></a></li><!-- #にaboutページのURLを入力してください -->
+        </ul>
+      </nav>
+    </div>
+    <!-- ヘッダーメニューSP版 -->
+    <nav class="header-nav-sp">
+      <ul>
+        <li><a href="{shop_url}"><i class="fas fa-home"></i><span>ホーム</span></a></li><!-- ホームへのリンク -->
+        <li><button id="hamburger-btn-js"><i class="fas fa-bars burger-icon-js"></i><i class="fas fa-times burger-icon-close-js"></i><span>メニュー</span></button></li>
+        <li><a href="https://www.easy-myshop.jp/ems/ap/ziorich/c-member-mypage"><i class="fas fa-user"></i><span>マイページ</span></a></li><!-- 会員ページへのリンク -->
+        <li><a href="#"><i class="fas fa-search"></i><span>検索</span></a></li><!-- #に検索ページのURLを入れてください -->
+        <li><a href="{cart_url}"><i class="fas fa-shopping-cart"></i><span>カート</span></a></li><!-- カートページへのリンク -->
+      </ul>
+    </nav>
+    <!-- ヘッダーメニューSP版 メニュー画面-->
+    <nav class="hamburger-nav">
+      <ul>
+        <li><a href="{shop_url}">Home<span>ホーム</span></a></li><!-- ホームへのリンク -->
+        <li><a href="{item_list_url}?category_id=カテゴリID">T-shirt<span>Tシャツ</span></a></li><!-- 各カテゴリIDを入力してください -->
+        <li><a href="{item_list_url}?category_id=カテゴリID">Polo shirt<span>ポロシャツ</span></a></li>
+        <li><a href="{item_list_url}?category_id=カテゴリID">Shirt<span>シャツ</span></a></li>
+        <li><a href="{item_list_url}?category_id=カテゴリID">Pants<span>パンツ</span></a></li>
+        <li><a href="{item_list_url}?category_id=カテゴリID">Suit<span>スーツ</span></a></li>
+        <li><a href="#">About us<span>ZIORICHについて</span></a></li><!-- #にaboutページのURLを入力してください -->
+      </ul>
+    </nav>
+  </header>
+<!-- 共通ヘッダーはここまで -->
+
+
+  <main>
+    <!-- スライドショー -->
+    <div class="wrapper">
+      <div class="main-slideshow">{slideshow1}</div>
+    </div>
+
+
+    <!-- 体型カバーシリーズ -->
+    <section class="cover-series">
+      <div class="wrapper">
+        <div class="section-title-area">
+          <h2 class="section-title">体型カバーシリーズ</h2><!-- タイトル -->
+          <p class="section-bottom-big">体型が気になる方必見！ただ着るだけで体形がカバーできる</p><!-- 説明文大 -->
+          <p class="section-bottom-small">お腹の出っ張りをキレイに見せる、ZIORICHオリジナル立体パターン</p><!-- 説明文小 -->
+        </div>
+
+        <!-- 商品画像エリア -->
+        <div class="image-area">
+          <ul class="image-area-list">
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード"><!-- 各商品コードを入れてください -->
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <p class="item-name">商品名が入ります商品名が入ります商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ZIORICH＋αシリーズ -->
+    <section class="ziorich-plus-alpha">
+      <div class="wrapper">
+        <div class="section-title-area">
+          <h2 class="section-title">ZIORICH＋αシリーズ</h2><!-- タイトル -->
+          <p class="section-bottom-big">ウェアにアイディア要素を取り入れた<br>ZIORICHならではのアイディア商品シリーズ</p><!-- 説明文大 -->
+        </div>
+
+        <!-- 特典ゲットのリンク -->
+        <a class="special-offer-button" href="#"><!-- #に詳細URLを入れてください -->
+          アイディアを応募して特典ゲット！<span>詳細はこちら→</span>
+        </a>
+
+        <!-- 商品画像エリア -->
+        <div class="image-area">
+          <ul class="image-area-list">
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード"><!-- 各商品コードを入れてください -->
+              <div><img class="item-image" src="image/sample.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">商品名が入ります</p>
+              <p class="item-description">商品説明が入ります</p>
+              <p class="item-size">サイズが入ります</p>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ラインアップ -->
+    <section class="line-up">
+      <div class="wrapper">
+        <div class="section-title-area">
+          <h2 class="section-title">ラインアップ</h2><!-- タイトル -->
+          <p class="section-bottom-big">ZIORICHの商品カテゴリー</p><!-- 説明文大 -->
+        </div>
+
+        <!-- カテゴリー画像エリア -->
+        <div class="image-area">
+          <ul class="image-area-list">
+            <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID"><!-- 各カテゴリIDを入れてください -->
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <p class="item-name">カテゴリー名が入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">カテゴリー名が入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">カテゴリー名が入ります</p>
+            </a></li>
+            <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID">
+              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <p class="item-name">カテゴリー名が入ります</p>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- コーディネート -->
+    <section class="cordinate">
+      <div class="wrapper">
+        <div class="section-title-area">
+          <h2 class="section-title">コーディネート</h2><!-- タイトル -->
+          <p class="section-bottom-big">何も考えず、ただ着るだけでキレイに見える</p><!-- 説明文大 -->
+          <p class="section-bottom-small">ZIORICH一押しコーデ</p><!-- 説明文小 -->
+        </div>
+
+        <!-- コーディネート画像エリア -->
+        <div class="image-area">
+          <ul class="image-area-list">
+            <li class="cordinate-list-item">
+              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+            </li>
+            <li class="cordinate-list-item">
+              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明">
+            </li>
+            <li class="cordinate-list-item">
+              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明">
+            </li>
+            <li class="cordinate-list-item">
+              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 共通フッターはここから -->
+  <footer>
+    <div class="footer-wrapper">
+      <div class="footer-container">
+        <!-- ABOUT US -->
+        <nav class="footer-nav">
+          <p class="footer-nav-title">about us</p>
+          <ul>
+            <li><a href="#">メニュー名が入ります</a></li><!-- #にURLを入れてください -->
+            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">メニュー名が入ります</a></li>
+          </ul>
+        </nav>
+        <!-- INFORMATION -->
+        <nav class="footer-nav">
+          <p class="footer-nav-title">information</p>
+          <ul>
+            <li><a href="#">メニュー名が入ります</a></li><!-- #にURLを入れてください -->
+            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">メニュー名が入ります</a></li>
+          </ul>
+        </nav>
+        <!-- 会員だけの新着情報をゲットしよう-->
+        <div class="footer-register">
+          <p>会員だけの新着情報をゲットしよう！</p>
+          <input type="text" placeholder="メールアドレス">
+          <button>登録</button>
+
+          <!-- snsロゴ -->
+          <div class="footer-snsbox">
+            <ul>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li><!-- #にインスタのURLを入れてください -->
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li><!-- #にフェイスブックのURLを入れてください -->
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li><!-- #にツイッターのURLを入れてください -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 著作権 -->
+      <div class="copyright">
+        <small>Copyright &copy; ZIORICH All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+<!-- 共通フッターはここまで -->
