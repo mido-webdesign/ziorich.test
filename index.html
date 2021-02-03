@@ -8,7 +8,7 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
   
   <!-- アイコン画像 -->
   <script src="https://kit.fontawesome.com/d618a1f02f.js" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
     <!-- ヘッダー上新着情報エリア -->
     <div class="header-info">
       <p class="header-info-text">
-        ヘッダー上の新着情報が入ります。ヘッダー上の新着情報が入ります。
+        ヘッダー上の新着情報が入ります。ヘッダー上の新着情報が入ります。{free_area15}
       </p>
       <div class="header-info-icon">
         <ul class="header-info-icon-list">
@@ -44,7 +44,7 @@
         <h1 class="header-logo"><a href="{shop_url}"><img src="image/header-logo.png" alt="ZIORICHロゴ画像"></a></h1><!-- ロゴ画像 -->
         <div class="header-logo-right">
           <div class="header-search-form">{search_form}</div><!-- 検索フォーム -->
-          <a class="header-insta-banner" href="#">インスタバナー</a><!-- #にインスタのURLを入れてください -->
+          <a class="header-insta-banner" href="#"><img src="#" alt="インスラグラムバナー"></a><!-- #にインスタのURLを入れてください -->
         </div>
       </div>
 
@@ -74,13 +74,12 @@
     <!-- ヘッダーメニューSP版 メニュー画面-->
     <nav class="hamburger-nav">
       <ul>
-        <li><a href="{shop_url}">Home<span>ホーム</span></a></li><!-- ホームへのリンク -->
-        <li><a href="{item_list_url}?category_id=カテゴリID">T-shirt<span>Tシャツ</span></a></li><!-- 各カテゴリIDを入力してください -->
-        <li><a href="{item_list_url}?category_id=カテゴリID">Polo shirt<span>ポロシャツ</span></a></li>
-        <li><a href="{item_list_url}?category_id=カテゴリID">Shirt<span>シャツ</span></a></li>
-        <li><a href="{item_list_url}?category_id=カテゴリID">Pants<span>パンツ</span></a></li>
-        <li><a href="{item_list_url}?category_id=カテゴリID">Suit<span>スーツ</span></a></li>
-        <li><a href="#">About us<span>ZIORICHについて</span></a></li><!-- #にaboutページのURLを入力してください -->
+        <li><a href="#">会社概要</a></li><!-- #に各ページのURLを入れてください -->
+        <li><a href="#">特定商取引法に基づく表示</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">個人情報保護方針</a></li>
+        <li><a href="#">ご利用ガイド/よくある質問</a></li>
+        <li><a href="#">お問い合わせ</a></li>
       </ul>
     </nav>
   </header>
@@ -254,29 +253,29 @@
         <nav class="footer-nav">
           <p class="footer-nav-title">about us</p>
           <ul>
-            <li><a href="#">メニュー名が入ります</a></li><!-- #にURLを入れてください -->
-            <li><a href="#">メニュー名が入ります</a></li>
-            <li><a href="#">メニュー名が入ります</a></li>
-            <li><a href="#">メニュー名が入ります</a></li>
-            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">10YCについて</a></li><!-- #に各ページのURLを入れてください -->
+            <li><a href="#">COLOR-REFORMについて</a></li>
+            <li><a href="#">お悩み相談窓口</a></li>
+            <li><a href="#">パートナーシップ</a></li>
+            <li><a href="#">法人・チーム向け</a></li>
           </ul>
         </nav>
         <!-- INFORMATION -->
         <nav class="footer-nav">
           <p class="footer-nav-title">information</p>
           <ul>
-            <li><a href="#">メニュー名が入ります</a></li><!-- #にURLを入れてください -->
-            <li><a href="#">メニュー名が入ります</a></li>
-            <li><a href="#">メニュー名が入ります</a></li>
-            <li><a href="#">メニュー名が入ります</a></li>
-            <li><a href="#">メニュー名が入ります</a></li>
+            <li><a href="#">会社概要</a></li><!-- #に各ページのURLを入れてください -->
+            <li><a href="#">特定商取引法に基づく表示</a></li>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">個人情報保護方針</a></li>
+            <li><a href="#">ご利用ガイド/よくある質問</a></li>
+            <li><a href="#">お問い合わせ</a></li>
           </ul>
         </nav>
         <!-- 会員だけの新着情報をゲットしよう-->
         <div class="footer-register">
           <p>会員だけの新着情報をゲットしよう！</p>
-          <input type="text" placeholder="メールアドレス">
-          <button>登録</button>
+          <a href="{online_shop_url_https}/c-member" class="button">会員登録はこちら</a><!-- 会員登録ページへのリンク -->
 
           <!-- snsロゴ -->
           <div class="footer-snsbox">
