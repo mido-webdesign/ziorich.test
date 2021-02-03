@@ -1,0 +1,721 @@
+@charset "UTF-8";
+/* 共通部分
+----------------------------------------- */
+/* .freepage_indexをつける */
+body {
+  font-size: 14px;
+  font-family: Roboto,'Noto Sans JP','San Fransisco','Calibri','ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic',sans-serif;
+  color: #3E3E3E;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 3%;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 100px;
+  background-color: #fff;
+}
+
+section:last-child {
+  margin-bottom: 100px;
+}
+
+.section-title-area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 21px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 8%;
+  height: 1px;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #333;
+}
+
+.section-bottom-big {
+  font-size: 29px;
+  margin-top: 40px;
+  font-weight: 300;
+  font-family: 'Noto Sans JP';
+}
+
+.section-bottom-small {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+  font-family: 'Noto Sans JP';
+}
+
+/* ヘッダー上新着情報エリア
+----------------------------------------- */
+.header-info {
+  color: #fff;
+  background-color: #000;
+  font-size: 12px;
+  padding: 15px 0;
+  width: 100%;
+  position: relative;
+}
+
+.header-info-text {
+  text-align: center;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.header-info-icon {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header-info-icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-info-icon-list li {
+  margin-left: 15px;
+}
+
+.header-info-icon-list li .fas {
+  color: #fff;
+  font-size: inherit;
+}
+
+/* ヘッダーロゴ画像エリア
+----------------------------------------- */
+.header-logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  background-color: #fff;
+}
+
+.header-logo img {
+  width: 400px;
+}
+
+.header-logo-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-search-form {
+  background-color: gray;
+  width: 150px;
+}
+
+.header-insta-banner {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin-left: 10px;
+  background-color: #CF2C8D;
+  position: relative;
+}
+
+/* ヘッダーメニューPC版
+----------------------------------------- */
+.header-nav {
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav ul li {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  letter-spacing: 3px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header-nav ul li:hover {
+  background-color: #E6E6E6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.header-nav ul li span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: normal;
+  font-family: 'Noto Sans JP';
+}
+
+/* ヘッダーメニューSP版（非表示）
+----------------------------------------- */
+.header-nav-sp {
+  display: none;
+  color: #fff;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  z-index: 5;
+}
+
+.header-nav-sp ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav-sp ul li {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.header-nav-sp ul li span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: normal;
+  font-family: 'Noto Sans JP';
+}
+
+.is-drawerActive .burger-icon-js {
+  display: none;
+}
+
+.burger-icon-close-js {
+  display: none;
+}
+
+.is-drawerActive .burger-icon-close-js {
+  display: inline-block;
+}
+
+/* メニュー画面 */
+.hamburger-nav {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: calc(100% - 54px);
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hamburger-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 10% 0;
+}
+
+.hamburger-nav ul li {
+  display: inline-block;
+  width: 75%;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.hamburger-nav ul li:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
+
+.hamburger-nav ul li span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: normal;
+  font-family: 'Noto Sans JP';
+}
+
+.is-drawerActive .hamburger-nav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* スライドショー
+----------------------------------------- */
+.main-slideshow {
+  width: 100%;
+  height: 400px;
+  background-color: beige;
+}
+
+/* 体型カバーシリーズ、ZIORICH＋αシリーズ、ラインアップ
+共通部分
+----------------------------------------- */
+.image-area-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.list-item {
+  max-width: 230px;
+  width: 24%;
+  letter-spacing: 0.05em;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.list-item:hover {
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.item-image {
+  max-width: 230px;
+  width: 100%;
+  max-height: 290px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.item-name,
+.item-description {
+  margin-bottom: 10px;
+}
+
+/* ZIORICH＋αシリーズ
+----------------------------------------- */
+/* 特典ゲットのリンク */
+.special-offer-button {
+  display: block;
+  text-align: center;
+  width: 280px;
+  padding: 15px 0;
+  margin: 0 auto 40px;
+  border: 2px solid #333;
+  border-radius: 50px;
+  background-color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.special-offer-button span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.special-offer-button:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/* コーディネート
+----------------------------------------- */
+.cordinate-list-item {
+  max-width: 230px;
+  width: 24%;
+  letter-spacing: 0.05em;
+}
+
+.cordinate-item-image {
+  max-width: 230px;
+  width: 100%;
+  max-height: 415px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* フッター
+----------------------------------------- */
+footer {
+  background-color: #4F4F4F;
+  color: #fff;
+}
+
+.footer-wrapper {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 3%;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 30px 0;
+}
+
+.footer-nav {
+  width: 32%;
+}
+
+.footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer-nav ul li {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #5C5C5C;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-nav ul li a {
+  display: block;
+}
+
+.footer-nav ul li:hover {
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-nav-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.footer-nav-title:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  bottom: -10px;
+  left: 0;
+  background-color: #848484;
+}
+
+.footer-register {
+  width: 32%;
+}
+
+.footer-register input {
+  background-color: #848484;
+  border-radius: 50px;
+  color: #fff;
+  width: 100%;
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.footer-register button {
+  background-color: #839FBD;
+  border-radius: 50px;
+  padding: 8px 20px;
+  margin-top: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-register button:hover {
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-snsbox {
+  margin-top: 30px;
+}
+
+.footer-snsbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-snsbox ul li {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-snsbox ul li:hover {
+  opacity: .5;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-snsbox ul li .fab {
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* --------------------------------------
+レスポンシブ 画面幅が670px以下の場合
+----------------------------------------- */
+@media (max-width: 670px) {
+  /* 共通部分
+----------------------------------------- */
+  body {
+    font-size: 13px;
+  }
+  section {
+    margin-top: 80px;
+  }
+  section:last-child {
+    margin-bottom: 60px;
+  }
+  .section-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .section-title::after {
+    content: "";
+    bottom: -15px;
+  }
+  .section-bottom-big {
+    font-size: 18px;
+  }
+  .section-bottom-small {
+    font-size: 13px;
+  }
+  br {
+    display: none;
+  }
+  /* ヘッダー上新着情報エリア
+----------------------------------------- */
+  .header-info {
+    font-size: 10px;
+    padding: 15px 3%;
+  }
+  .header-info-text {
+    max-width: 94%;
+  }
+  .header-info-icon {
+    display: none;
+  }
+  /* ヘッダーロゴ画像エリア
+----------------------------------------- */
+  .header-logo-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px 0;
+  }
+  .header-logo img {
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .header-logo-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+  }
+  .header-search-form {
+    width: 40%;
+  }
+  .header-insta-banner {
+    width: 40%;
+    height: 50px;
+    margin-left: 0;
+  }
+  /* ヘッダーメニューPC版（非表示）
+----------------------------------------- */
+  .header-nav {
+    display: none;
+  }
+  /* ヘッダーメニューSP版
+----------------------------------------- */
+  .header-nav-sp {
+    display: block;
+  }
+  /* スライドショー
+----------------------------------------- */
+  .main-slideshow {
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+  }
+  /* 体型カバーシリーズ、ZIORICH＋αシリーズ、ラインアップ
+共通部分
+----------------------------------------- */
+  .image-area-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .list-item {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  /* コーディネート
+----------------------------------------- */
+  .cordinate-list-item {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  /* フッター
+----------------------------------------- */
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-nav {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer-nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-nav ul li {
+    width: 48%;
+    font-size: 10px;
+    padding: 5px 0;
+  }
+  .footer-register {
+    width: 100%;
+  }
+  .footer-snsbox {
+    margin-top: 10px;
+  }
+  .footer-snsbox ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .copyright {
+    margin-bottom: 54px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
