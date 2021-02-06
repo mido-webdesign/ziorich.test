@@ -24,7 +24,7 @@
 
 <body>
 
-  <header>
+  <header id="header-js">
     <!-- ヘッダー上新着情報エリア -->
     <div class="header-info">
       <p class="header-info-text">
@@ -47,20 +47,21 @@
           <a class="header-insta-banner" href="#"><img src="#" alt="インスラグラムバナー"></a><!-- #にインスタのURLを入れてください -->
         </div>
       </div>
-
-      <!-- ヘッダーメニューPC版 -->
-      <nav class="header-nav">
-        <ul>
-          <li><a href="{shop_url}">Home<span>ホーム</span></a></li><!-- ホームへのリンク -->
-          <li><a href="{item_list_url}?category_id=カテゴリID">T-shirt<span>Tシャツ</span></a></li><!-- 各カテゴリIDを入力してください -->
-          <li><a href="{item_list_url}?category_id=カテゴリID">Polo shirt<span>ポロシャツ</span></a></li>
-          <li><a href="{item_list_url}?category_id=カテゴリID">Shirt<span>シャツ</span></a></li>
-          <li><a href="{item_list_url}?category_id=カテゴリID">Pants<span>パンツ</span></a></li>
-          <li><a href="{item_list_url}?category_id=カテゴリID">Suit<span>スーツ</span></a></li>
-          <li><a href="#">About us<span>ZIORICHについて</span></a></li><!-- #にaboutページのURLを入力してください -->
-        </ul>
-      </nav>
     </div>
+
+    <!-- ヘッダーメニューPC版 -->
+    <nav class="header-nav" id="header-nav-js">
+      <ul>
+        <li><a href="{shop_url}">Home<span>ホーム</span></a></li><!-- ホームへのリンク -->
+        <li><a href="{item_list_url}?category_id=カテゴリID">T-shirt<span>Tシャツ</span></a></li><!-- 各カテゴリIDを入力してください -->
+        <li><a href="{item_list_url}?category_id=カテゴリID">Polo shirt<span>ポロシャツ</span></a></li>
+        <li><a href="{item_list_url}?category_id=カテゴリID">Shirt<span>シャツ</span></a></li>
+        <li><a href="{item_list_url}?category_id=カテゴリID">Pants<span>パンツ</span></a></li>
+        <li><a href="{item_list_url}?category_id=カテゴリID">Suit<span>スーツ</span></a></li>
+        <li><a href="#">About us<span>ZIORICHについて</span></a></li><!-- #にaboutページのURLを入力してください -->
+      </ul>
+    </nav>
+    
     <!-- ヘッダーメニューSP版 -->
     <nav class="header-nav-sp">
       <ul>
@@ -106,25 +107,25 @@
         <div class="image-area">
           <ul class="image-area-list">
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード"><!-- 各商品コードを入れてください -->
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
               <p class="item-name">商品名が入ります商品名が入ります商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
             </a></li>
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
             </a></li>
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
             </a></li>
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
@@ -152,25 +153,25 @@
         <div class="image-area">
           <ul class="image-area-list">
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード"><!-- 各商品コードを入れてください -->
-              <div><img class="item-image" src="image/sample.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
             </a></li>
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
             </a></li>
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
             </a></li>
             <li class="list-item"><a href="{online_shop_url}/c-item-detail?ic=商品コード">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">商品名が入ります</p>
               <p class="item-description">商品説明が入ります</p>
               <p class="item-size">サイズが入ります</p>
@@ -193,19 +194,19 @@
         <div class="image-area">
           <ul class="image-area-list">
             <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID"><!-- 各カテゴリIDを入れてください -->
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
               <p class="item-name">カテゴリー名が入ります</p>
             </a></li>
             <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">カテゴリー名が入ります</p>
             </a></li>
             <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">カテゴリー名が入ります</p>
             </a></li>
             <li class="list-item"><a href="{item_list_url}?category_id=カテゴリID">
-              <img class="item-image" src="image/sample.jpg" alt="画像の説明">
+              <div class="item-image"><img src="image/sample.jpg" alt="画像の説明"></div>
               <p class="item-name">カテゴリー名が入ります</p>
             </a></li>
           </ul>
@@ -227,16 +228,16 @@
         <div class="image-area">
           <ul class="image-area-list">
             <li class="cordinate-list-item">
-              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明"><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
+              <div class="cordinate-item-image"><img src="image/sample2.jpg" alt="画像の説明"></div><!-- srcに画像URL、"画像の説明"に説明を入れてください -->
             </li>
             <li class="cordinate-list-item">
-              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明">
+              <div class="cordinate-item-image"><img src="image/sample2.jpg" alt="画像の説明"></div>
             </li>
             <li class="cordinate-list-item">
-              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明">
+              <div class="cordinate-item-image"><img src="image/sample2.jpg" alt="画像の説明"></div>
             </li>
             <li class="cordinate-list-item">
-              <img class="cordinate-item-image" src="image/sample2.jpg" alt="画像の説明">
+              <div class="cordinate-item-image"><img src="image/sample2.jpg" alt="画像の説明"></div>
             </li>
           </ul>
         </div>
