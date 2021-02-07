@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title}</title><!-- ページのタイトル -->
+  <title>{shop_name}</title><!-- ページのタイトル -->
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,7 +13,7 @@
   <!-- アイコン画像 -->
   <script src="https://kit.fontawesome.com/d618a1f02f.js" crossorigin="anonymous"></script>
 
-  <!-- CSS -->
+  <!-- リセットCSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -22,14 +22,12 @@
 
 </head>
 
-<body>
+<body class="freepage_index">
 
   <header id="header-js">
     <!-- ヘッダー上新着情報エリア -->
     <div class="header-info">
-      <p class="header-info-text">
-        ヘッダー上の新着情報が入ります。ヘッダー上の新着情報が入ります。{free_area15}
-      </p>
+      <p class="header-info-text">{free_area15}</p><!-- free_area15に登録した新着情報が入ります -->
       <div class="header-info-icon">
         <ul class="header-info-icon-list">
           <li><a href="https://www.easy-myshop.jp/ems/ap/ziorich/c-member-mypage"><i class="fas fa-user"></i></a></li><!-- 会員ページへのリンク -->
@@ -41,10 +39,10 @@
     <div class="wrapper">
       <!-- ヘッダーロゴ画像エリア -->
       <div class="header-logo-area">
-        <h1 class="header-logo"><a href="{shop_url}"><img src="image/header-logo.png" alt="ZIORICHロゴ画像"></a></h1><!-- ロゴ画像 -->
+        <h1 class="header-logo"><a href="{shop_url}"><img src="{logo_url}" alt="ZIORICHロゴ画像"></a></h1><!-- ロゴ画像 -->
         <div class="header-logo-right">
           <div class="header-search-form">{search_form}</div><!-- 検索フォーム -->
-          <a class="header-insta-banner" href="#"><img src="#" alt="インスラグラムバナー"></a><!-- #にインスタのURLを入れてください -->
+          <a class="header-insta-banner" href="#"><img src="#" alt="インスラグラムバナー"></a><!-- href="#"の#にインスタのURLを、src="#"の#にバナー画像のURLを入れてください -->
         </div>
       </div>
     </div>
