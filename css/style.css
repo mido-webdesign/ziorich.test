@@ -1,9 +1,6 @@
-@charset "UTF-8";
-/* フォントカラー */
 /* 共通部分
 ----------------------------------------- */
-/* .freepage_indexをつける */
-body {
+.freepage_index {
   font-size: 14px;
   font-family: 'Noto Sans JP','San Fransisco','Calibri','ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic',sans-serif;
   color: #3E3E3E;
@@ -11,16 +8,16 @@ body {
   font-weight: 400;
 }
 
-img {
+.freepage_index img {
   max-width: 100%;
 }
 
-a {
+.freepage_index a {
   color: inherit;
   text-decoration: none;
 }
 
-button {
+.freepage_index button {
   background: none;
   border: none;
   outline: none;
@@ -29,36 +26,36 @@ button {
   appearance: none;
 }
 
-.wrapper {
+.freepage_index .wrapper {
   max-width: 1280px;
   width: 100%;
   padding: 0 3%;
   margin: 0 auto;
 }
 
-section {
+.freepage_index section {
   margin-top: 100px;
   background-color: #fff;
 }
 
-section:last-child {
+.freepage_index section:last-child {
   margin-bottom: 100px;
 }
 
-.section-title-area {
+.freepage_index .section-title-area {
   text-align: center;
   margin-bottom: 30px;
   font-weight: 300;
 }
 
-.section-title {
+.freepage_index .section-title {
   font-size: 24px;
   letter-spacing: 5px;
   margin-bottom: 20px;
   position: relative;
 }
 
-.section-title::after {
+.freepage_index .section-title::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -71,13 +68,13 @@ section:last-child {
   background-color: #3E3E3E;
 }
 
-.section-bottom-big {
+.freepage_index .section-bottom-big {
   font-size: 25px;
   margin-top: 40px;
   font-family: 'Noto Sans JP';
 }
 
-.section-bottom-small {
+.freepage_index .section-bottom-small {
   font-size: 18px;
   margin-top: 10px;
   font-family: 'Noto Sans JP';
@@ -85,7 +82,7 @@ section:last-child {
 
 /* ヘッダー上新着情報エリア
 ----------------------------------------- */
-.header-info {
+.freepage_index .header-info {
   color: #fff;
   background-color: #000;
   font-size: 12px;
@@ -94,13 +91,13 @@ section:last-child {
   position: relative;
 }
 
-.header-info-text {
+.freepage_index .header-info-text {
   text-align: center;
   max-width: 75%;
   margin: 0 auto;
 }
 
-.header-info-icon {
+.freepage_index .header-info-icon {
   position: absolute;
   top: 50%;
   right: 3%;
@@ -108,24 +105,24 @@ section:last-child {
           transform: translateY(-50%);
 }
 
-.header-info-icon-list {
+.freepage_index .header-info-icon-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-info-icon-list li {
+.freepage_index .header-info-icon-list li {
   margin-left: 15px;
 }
 
-.header-info-icon-list li .fas {
+.freepage_index .header-info-icon-list li .fas {
   color: #fff;
   font-size: inherit;
 }
 
 /* ヘッダーロゴ画像エリア
 ----------------------------------------- */
-.header-logo-area {
+.freepage_index .header-logo-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,22 +136,22 @@ section:last-child {
   background-color: #fff;
 }
 
-.header-logo img {
+.freepage_index .header-logo {
   width: 220px;
 }
 
-.header-logo-right {
+.freepage_index .header-logo-right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-search-form {
+.freepage_index .header-search-form {
   background-color: gray;
   width: 150px;
 }
 
-.header-insta-banner {
+.freepage_index .header-insta-banner {
   display: inline-block;
   width: 150px;
   height: 50px;
@@ -165,14 +162,14 @@ section:last-child {
 
 /* ヘッダーメニューPC版
 ----------------------------------------- */
-.header-nav {
+.freepage_index .header-nav {
   background-color: #fff;
   width: 100%;
   margin: 0 auto;
   padding: 20px 0;
 }
 
-.header-nav ul {
+.freepage_index .header-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +184,7 @@ section:last-child {
   margin: 0 auto;
 }
 
-.header-nav ul li {
+.freepage_index .header-nav ul li {
   width: 100%;
   padding: 20px 0;
   text-align: center;
@@ -196,20 +193,20 @@ section:last-child {
   transition: all .3s;
 }
 
-.header-nav ul li:hover {
+.freepage_index .header-nav ul li:hover {
   background-color: #E6E6E6;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.header-nav ul li span {
+.freepage_index .header-nav ul li span {
   display: block;
   font-size: 10px;
   letter-spacing: normal;
   font-family: 'Noto Sans JP';
 }
 
-.header-nav.fixed {
+.freepage_index .header-nav.fixed {
   position: fixed;
   top: 0;
   z-index: 3;
@@ -222,7 +219,7 @@ section:last-child {
 
 /* ヘッダーメニューSP版（非表示）
 ----------------------------------------- */
-.header-nav-sp {
+.freepage_index .header-nav-sp {
   display: none;
   color: #fff;
   background-color: #000;
@@ -234,7 +231,7 @@ section:last-child {
   z-index: 5;
 }
 
-.header-nav-sp ul {
+.freepage_index .header-nav-sp ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,34 +243,34 @@ section:last-child {
           align-items: center;
 }
 
-.header-nav-sp ul li {
+.freepage_index .header-nav-sp ul li {
   width: 100%;
   padding: 10px 0;
   text-align: center;
   letter-spacing: 3px;
 }
 
-.header-nav-sp ul li span {
+.freepage_index .header-nav-sp ul li span {
   display: block;
   font-size: 8px;
   letter-spacing: normal;
   font-family: 'Noto Sans JP';
 }
 
-.is-drawerActive .burger-icon-js {
+.freepage_index .is-drawerActive .burger-icon-js {
   display: none;
 }
 
-.burger-icon-close-js {
+.freepage_index .burger-icon-close-js {
   display: none;
 }
 
-.is-drawerActive .burger-icon-close-js {
+.freepage_index .is-drawerActive .burger-icon-close-js {
   display: inline-block;
 }
 
 /* メニュー画面 */
-.hamburger-nav {
+.freepage_index .hamburger-nav {
   position: fixed;
   z-index: 4;
   width: 100%;
@@ -288,7 +285,7 @@ section:last-child {
   transition: 0.3s;
 }
 
-.hamburger-nav ul {
+.freepage_index .hamburger-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,25 +308,25 @@ section:last-child {
   padding: 10% 0;
 }
 
-.hamburger-nav ul li {
+.freepage_index .hamburger-nav ul li {
   display: inline-block;
   width: 75%;
   text-align: center;
   padding: 5% 0;
 }
 
-.hamburger-nav ul li:not(:last-child) {
+.freepage_index .hamburger-nav ul li:not(:last-child) {
   border-bottom: 1px solid #3E3E3E;
 }
 
-.hamburger-nav ul li span {
+.freepage_index .hamburger-nav ul li span {
   display: block;
   font-size: 8px;
   letter-spacing: normal;
   font-family: 'Noto Sans JP';
 }
 
-.is-drawerActive .hamburger-nav {
+.freepage_index .is-drawerActive .hamburger-nav {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 0.3s;
@@ -338,7 +335,7 @@ section:last-child {
 
 /* スライドショー
 ----------------------------------------- */
-.main-slideshow {
+.freepage_index .main-slideshow {
   width: 100%;
   height: 400px;
   background-color: beige;
@@ -347,7 +344,7 @@ section:last-child {
 /* 体型カバーシリーズ、ZIORICH＋αシリーズ、ラインアップ
 共通部分
 ----------------------------------------- */
-.image-area-list {
+.freepage_index .image-area-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,28 +355,28 @@ section:last-child {
           align-items: flex-start;
 }
 
-.list-item {
-  max-width: 166.79px;
+.freepage_index .list-item {
+  max-width: 230px;
   width: 23%;
   letter-spacing: 0.05em;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.list-item:hover {
+.freepage_index .list-item:hover {
   opacity: .5;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.item-image {
+.freepage_index .item-image {
   width: 100%;
-  padding-top: calc(100% * (233.5 / 166.79));
+  padding-top: calc(100% * (290 / 230));
   margin-bottom: 10px;
   position: relative;
 }
 
-.item-image img {
+.freepage_index .item-image img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -388,15 +385,15 @@ section:last-child {
      object-fit: cover;
 }
 
-.item-name,
-.item-description {
+.freepage_index .item-name,
+.freepage_index .item-description {
   margin-bottom: 10px;
 }
 
 /* ZIORICH＋αシリーズ
 ----------------------------------------- */
 /* 特典ゲットのリンク */
-.special-offer-button {
+.freepage_index .special-offer-button {
   display: block;
   text-align: center;
   width: 280px;
@@ -409,13 +406,13 @@ section:last-child {
   transition: all .3s;
 }
 
-.special-offer-button span {
+.freepage_index .special-offer-button span {
   display: block;
   font-size: 12px;
   margin-top: 5px;
 }
 
-.special-offer-button:hover {
+.freepage_index .special-offer-button:hover {
   background-color: #3E3E3E;
   color: #fff;
   -webkit-transition: all .3s;
@@ -424,20 +421,20 @@ section:last-child {
 
 /* コーディネート
 ----------------------------------------- */
-.cordinate-list-item {
-  max-width: 166.79px;
+.freepage_index .cordinate-list-item {
+  max-width: 230px;
   width: 24%;
   letter-spacing: 0.05em;
 }
 
-.cordinate-item-image {
+.freepage_index .cordinate-item-image {
   width: 100%;
-  padding-top: calc(100% * (300.21 / 166.79));
+  padding-top: calc(100% * (414 / 230));
   margin-bottom: 10px;
   position: relative;
 }
 
-.cordinate-item-image img {
+.freepage_index .cordinate-item-image img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -448,19 +445,19 @@ section:last-child {
 
 /* フッター
 ----------------------------------------- */
-footer {
+.freepage_index footer {
   background-color: #000;
   color: #fff;
 }
 
-.footer-wrapper {
+.freepage_index .footer-wrapper {
   max-width: 1400px;
   width: 100%;
   padding: 0 3%;
   margin: 0 auto;
 }
 
-.footer-container {
+.freepage_index .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,11 +470,11 @@ footer {
   padding: 30px 0;
 }
 
-.footer-nav {
+.freepage_index .footer-nav {
   width: 32%;
 }
 
-.footer-nav ul {
+.freepage_index .footer-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +485,7 @@ footer {
   margin-top: 20px;
 }
 
-.footer-nav ul li {
+.freepage_index .footer-nav ul li {
   width: 100%;
   padding: 10px 0;
   border-bottom: 1px solid #5C5C5C;
@@ -496,17 +493,17 @@ footer {
   transition: all .3s;
 }
 
-.footer-nav ul li a {
+.freepage_index .footer-nav ul li a {
   display: block;
 }
 
-.footer-nav ul li a:hover {
+.freepage_index .footer-nav ul li a:hover {
   opacity: .5;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.footer-nav-title {
+.freepage_index .footer-nav-title {
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
@@ -514,7 +511,7 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-nav-title:after {
+.freepage_index .footer-nav-title:after {
   content: "";
   position: absolute;
   width: 30px;
@@ -524,11 +521,11 @@ footer {
   background-color: #848484;
 }
 
-.footer-register {
+.freepage_index .footer-register {
   width: 32%;
 }
 
-.footer-register .button {
+.freepage_index .footer-register .button {
   display: inline-block;
   background-color: #839FBD;
   border-radius: 50px;
@@ -538,23 +535,23 @@ footer {
   transition: all .3s;
 }
 
-.footer-register .button:hover {
+.freepage_index .footer-register .button:hover {
   opacity: .5;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.footer-snsbox {
+.freepage_index .footer-snsbox {
   margin-top: 30px;
 }
 
-.footer-snsbox ul {
+.freepage_index .footer-snsbox ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-snsbox ul li {
+.freepage_index .footer-snsbox ul li {
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
@@ -566,13 +563,13 @@ footer {
   transition: all .3s;
 }
 
-.footer-snsbox ul li:hover {
+.freepage_index .footer-snsbox ul li:hover {
   opacity: .5;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.footer-snsbox ul li .fab {
+.freepage_index .footer-snsbox ul li .fab {
   position: absolute;
   font-size: 20px;
   top: 50%;
@@ -581,7 +578,7 @@ footer {
           transform: translate(-50%, -50%);
 }
 
-.copyright {
+.freepage_index .copyright {
   padding: 20px 0;
   text-align: center;
 }
@@ -590,59 +587,62 @@ footer {
 レスポンシブ 画面幅が670px以下の場合
 ----------------------------------------- */
 @media (max-width: 670px) {
-  /* 共通部分
+
+/* 共通部分
 ----------------------------------------- */
-  body {
+  .freepage_index {
     font-size: 13px;
   }
-  section {
+  .freepage_index section {
     margin-top: 80px;
   }
-  section:last-child {
+  .freepage_index section:last-child {
     margin-bottom: 60px;
   }
-  .section-title {
+  .freepage_index .section-title {
     font-size: 18px;
     margin-bottom: 15px;
   }
-  .section-title::after {
+  .freepage_index .section-title::after {
     content: "";
     bottom: -15px;
   }
-  .section-bottom-big {
+  .freepage_index .section-bottom-big {
     font-size: 18px;
   }
-  .section-bottom-small {
+  .freepage_index .section-bottom-small {
     font-size: 13px;
   }
-  br {
+  .freepage_index br {
     display: none;
   }
+
   /* ヘッダー上新着情報エリア
------------------------------------------ */
-  .header-info {
+  ----------------------------------------- */
+  .freepage_index .header-info {
     font-size: 10px;
     padding: 15px 3%;
   }
-  .header-info-text {
+  .freepage_index .header-info-text {
     max-width: 94%;
   }
-  .header-info-icon {
+  .freepage_index .header-info-icon {
     display: none;
   }
+
   /* ヘッダーロゴ画像エリア
------------------------------------------ */
-  .header-logo-area {
+  ----------------------------------------- */
+  .freepage_index .header-logo-area {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 10px 0;
   }
-  .header-logo img {
+  .freepage_index .header-logo img {
     margin-bottom: 10px;
   }
-  .header-logo-right {
+  .freepage_index .header-logo-right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -650,62 +650,68 @@ footer {
         justify-content: space-around;
     width: 100%;
   }
-  .header-search-form {
+  .freepage_index .header-search-form {
     width: 40%;
   }
-  .header-insta-banner {
+  .freepage_index .header-insta-banner {
     width: 40%;
     height: 50px;
     margin-left: 0;
   }
+
   /* ヘッダーメニューPC版（非表示）
------------------------------------------ */
-  .header-nav {
+  ----------------------------------------- */
+  .freepage_index .header-nav {
     display: none;
   }
+
   /* ヘッダーメニューSP版
------------------------------------------ */
-  .header-nav-sp {
+  ----------------------------------------- */
+  .freepage_index .header-nav-sp {
     display: block;
   }
+
   /* スライドショー
------------------------------------------ */
-  .main-slideshow {
+  ----------------------------------------- */
+  .freepage_index .main-slideshow {
     width: 100%;
     height: 400px;
     background-color: beige;
   }
+
   /* 体型カバーシリーズ、ZIORICH＋αシリーズ、ラインアップ
-共通部分
------------------------------------------ */
-  .image-area-list {
+  共通部分
+  ----------------------------------------- */
+  .freepage_index .image-area-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .list-item {
+  .freepage_index .list-item {
     width: 48%;
     margin-bottom: 30px;
   }
+
   /* コーディネート
------------------------------------------ */
-  .cordinate-list-item {
+  ----------------------------------------- */
+  .freepage_index .cordinate-list-item {
     width: 48%;
     margin-bottom: 30px;
   }
+
   /* フッター
------------------------------------------ */
-  .footer-container {
+  ----------------------------------------- */
+  .freepage_index .footer-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 10px;
   }
-  .footer-nav {
+  .freepage_index .footer-nav {
     width: 100%;
     margin-bottom: 30px;
   }
-  .footer-nav ul {
+  .freepage_index .footer-nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -716,19 +722,19 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .footer-nav ul li {
+  .freepage_index .footer-nav ul li {
     width: 48%;
     font-size: 12px;
     padding: 5px 0;
   }
-  .footer-register {
+  .freepage_index .footer-register {
     width: 100%;
     text-align: center;
   }
-  .footer-snsbox {
+  .freepage_index .footer-snsbox {
     margin-top: 20px;
   }
-  .footer-snsbox ul {
+  .freepage_index .footer-snsbox ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -736,8 +742,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .copyright {
+  .freepage_index .copyright {
     margin-bottom: 54px;
   }
 }
-/*# sourceMappingURL=style.css.map */
